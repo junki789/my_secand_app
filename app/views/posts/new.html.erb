@@ -1,0 +1,16 @@
+<h1>新規投稿ページ</h1>
+<%= form_tag('/posts', method: :post) do %>
+
+　場所 <input type="text" name="name" value="○○県〇〇市">
+   天気 <%= select_tag :wether, options_for_select( [
+     ['晴れ',],
+    ['曇り',],
+    ['雨',],
+    ['雪',],
+    ['霰',],
+  ] 
+  ),  include_blank: true, class: "form-control" %>
+  一言コメント <input type="text" name="content"> 
+  <input type="submit" value="投稿する">
+
+<% end %>

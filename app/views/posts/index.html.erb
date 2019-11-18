@@ -1,0 +1,27 @@
+<h1>Today's Weather？</h1>
+<%= search_form_for @q do |f| %>
+    <%= f.label :あなたのお住まいの場所は？例：〇〇県〇〇市 %>
+    <%= f.search_field :name_cont %>
+ 
+    <%= f.submit %>
+<% end %>
+
+<%= link_to '新規投稿はこちら', '/posts/new' %>
+<div class="navigate icon"><i></i></div>
+<div class="Center">
+<% @posts.each do |post| %>
+  <div class="post">
+  　<div class="post-name">
+      地名：<%= post.name %>
+    </div>
+    <div class="post-date">
+      投稿日時：<%= post.created_at.to_s %>
+    </div>
+    <div class="post-wether">
+     天気：<%= post.wether %>
+     </div>
+    <div class="post-content">
+      <%= post.content %>
+    </div>
+  </div>
+<% end %>

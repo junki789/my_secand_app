@@ -1,0 +1,133 @@
+html{
+  background-image: url("sora2");
+}
+
+
+
+h1 {
+  letter-spacing: 2px;
+  font-size: 40px;
+  background-color:lightblue;
+  font-family: 'arial black';
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color:black;
+}
+
+form {
+  text-align: center;
+  font-size: 25px;
+  font-family: Courier New;
+}
+
+a:-webkit-any-link {
+  margin:0 auto;
+  display:block;
+  width:119px;
+  font-size: 13px;
+  color:black;
+  cursor: pointer;
+  text-decoration: underline;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgb(148, 197, 230) 50%);
+  background-size: 200% auto;
+  transition: .3s;
+  
+}
+
+a:hover{
+  background-position: -100% 0;
+  color: #fff;
+}
+
+.Center{
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.post{
+  display: inline-block;
+  border: 1px solid;
+  width: 800px;
+  margin-top: 30px;
+  text-align:left;
+}
+
+.post-date{
+  color: gray;
+}
+
+.navigate.icon {
+  color:orange;
+  position: absolute;
+  margin-left: 765px;
+  margin-top: -22px;
+  width: 14px;
+  height: 18px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.navigate.icon:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -17px;
+  width: 0;
+  height: 0;
+  border-top: solid 18px transparent;
+  border-bottom: solid 18px currentColor;
+  border-left: solid 7px transparent;
+  border-right: solid 7px transparent;
+}
+
+.navigate.icon:after {
+  position: absolute;
+  margin-left: 765px;
+  margin-top: -22px;
+  width: 14px;
+  height: 18px;
+  color: white;
+  border-top: solid 5px transparent;
+  border-bottom: solid 5px currentColor;
+  border-left: solid 7px transparent;
+  border-right: solid 7px transparent;
+}
+
+.navigate.icon i {
+  position: absolute;
+  width: 10px;
+  height: 14px;
+  left: 2px;
+  top: 3px;
+}
+
+.navigate.icon i:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -14px;
+  width: 0;
+  height: 0;
+  color: white;
+  border-top: solid 14px transparent;
+  border-bottom: solid 14px currentColor;
+  border-left: solid 5px transparent;
+  border-right: solid 5px transparent;
+}
+
+.navigate.icon i:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 0;
+  height: 0;
+  border-top: solid 4px transparent;
+  border-bottom: solid 4px currentColor;
+  border-left: solid 5px transparent;
+  border-right: solid 5px transparent;
+}

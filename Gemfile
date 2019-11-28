@@ -64,3 +64,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'ransack'
 gem 'devise'
 
+group :production do
+  gem 'mysql2', '>= 0.4.4', '< 0.6.0'
+end
